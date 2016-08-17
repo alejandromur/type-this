@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">  <![endif]-->
+<!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8" lang="en">         <![endif]-->
+<!--[if IE 8]>     <html class="no-js lt-ie9" lang="en">                <![endif]-->
+<!--[if IE 9]>     <html class="no-js ie9" lang="en">                   <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>type-this|</title>
+
+        <meta name="copyright" content="&copy; 2016 Mamutlove">
+        <meta name="description" content="Type-this. A simple #Vanilla #JavaScript plugin that animates any message you want. No #jQuery is needed. No pretentions, just for fun">
+        <meta name="keywords" content="CSS, Vanilla Javascript, JavaScript, type this">
+        <meta name="robots" content="follow, all">
+        <meta http-equiv="author" content="@alejandro_mur">
+
+        <meta property="twitter:card" content="Type-this. An automatic Javascript writer">
+        <meta property="twitter:url" content="http://www.mamutlove.es/projects/type-this/">
+        <meta property="twitter:title" content="Type-this. A simple CSS helper for neat global HTML message">
+        <meta property="twitter:description" content="Tip off. A simple #Vanilla #JavaScript plugin that animates any message you want to display">
+        <meta property="twitter:image" content="http://www.mamutlove.es/img/logo-mamutlove.jpg" />
+        <meta property="twitter:site" content="@mamutlove">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1 class="typethis"></h1>
+
+        </div>
+
+        <script src="js/type-this-1.0.js"></script>
+        <script>
+
+            var t = new Typethis({
+                autoWriting: true,
+                delay: 600,
+                loop: false,
+                speed : [200,600],
+                words: ["CSS", "SCSS", "JS", "UX", "Spare time"]
+            });
+
+        </script>
+
+    </body>
+</html>

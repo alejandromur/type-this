@@ -1,0 +1,117 @@
+/***************
+*
+*   DEMO PAGE STYLES
+*
+*************/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+}
+
+@keyframes pump {
+  0% {
+    transform: scale3d(0.5,0.5,5);
+  }
+  50% {
+    transform: scale3d(1,1,1);
+  }
+  100% {
+    transform: scale3d(0.5,0.5,5);
+  }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background: #f9f9f9;
+
+    padding: 32px;
+    border-bottom: 4px solid #FD1472;
+    }
+    .typethis,
+    .typethis__output {
+        display: inline-block;
+        position: relative;
+        }
+    .typethis__output {
+        z-index: 1;
+        }
+
+
+.cursor {
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-color: #FD1472;
+    transition: all 200ms linear;
+    animation: blink 1s infinite forwards;
+    }
+    .cursor.is-done {
+        width: 100%;
+        animation: none;
+        }
+
+.button__start {
+    display: inline-block;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color: #FD1472;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 200ms ease-in-out;
+}
+    .button__start:hover, .button__start:focus {
+        color: #fafafa;
+        border-color: #FD1472;
+        background: #FD1472;
+        }
+
+
+#svg-heart {
+    margin-top: 8px;
+    transition:  all 200ms linear;
+    animation: pump 3s infinite forwards;
+    -webkit-backface-visibility: hidden;
+    }
+    .st0{
+        fill:#FD1472;
+        }
