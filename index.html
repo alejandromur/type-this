@@ -36,14 +36,15 @@
 
         </div>
 
-        <script src="js/type-this-1.0.js"></script>
+        <script src="js/type-this-1.0.min.js"></script>
         <script>
 
             var t = new Typethis({
-                autoWriting: true,
+                autoWriting: false,
+                autoWritingDelay: 1500,
                 delay: 600,
                 loop: false,
-                speed : [200,600],
+                speed : [50,150],
                 words: ["CSS", "SCSS", "JS", "UX", "Spare time"]
             });
 

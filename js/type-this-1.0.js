@@ -36,6 +36,7 @@
         // Options (defaults) ---------------------
         var defaults = {
             autoWriting: true,
+            autoWritingDelay : 0,
             className: ".typethis",
             delay: 200,
             loop: true,
@@ -47,7 +48,11 @@
             this.options = extendDefaults( defaults, arguments[0] );
         }
 
-        if(this.options.autoWriting === true) this.initialize();
+        if(this.options.autoWriting === true){
+            this.initialize();
+        }else{
+            if(this.options.autoWritingDelay !== 0) this.initWithTimeout();
+        }
 
     };
 
@@ -66,6 +71,15 @@
 
             // run script
             this.run();
+        },
+
+        initWithTimeout : function(){
+
+            var self = this;
+
+            setTimeout(function(){
+                self.initialize(self);
+            }, self.options.autoWritingDelay);
         },
 
         run : function(){
