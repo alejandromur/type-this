@@ -9,9 +9,10 @@
 <p>• Include the CSS &amp; Javascript file minify or not in your HTML.</p>
 <p>• Ensure you have a container within the DOM any element with the class by default "typethis" or the one you want to use, but remember to set it at the className option.</p>
 <p>• Initialize your writer. <pre>var typethis = new Typethis();</pre></p>
-<p>• Remember you can customize some features 
+<p>• Remember you can customize some features
     <pre>var typethis = new Typethis({
         autoWriting: true,
+        autoWritingDelay : 0,
         className : ".typethis",
         delay: 600,
         loop: false,
@@ -26,6 +27,10 @@
         <td>autoWriting</td>
         <td>Starts when the page is loaded or it is fired when an events occurs</td>
     </tr>
+    <tr>
+        <td>autoWritingDelay</td>
+        <td>If autoWriting property is false you could set a trigger to fire it or indicate a delay to start writing.</td>
+    </tr>    
     <tr>
         <td>className</td>
         <td>The class of the element that the plugin searches within the DOM</td>
