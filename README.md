@@ -2,7 +2,7 @@
 <p>A simple Vanilla JavaScript plugin that animates any message you want. No jQuery is needed. No pretentions, just for fun</p>
 
 <h2>Demo</h2>
-<p><a href="http://www.mamutlove.es/projects/type-this/" title="Demo" target="_blank">Demo 1</a> | <a href="http://www.mamutlove.es/projects/type-this/index2.html" title="Demo" target="_blank">Demo 2</a> | <a href="http://www.mamutlove.es/projects/type-this/index3.html" title="Demo" target="_blank">Demo 3</a></p>
+<p><a href="https://www.mamutlove.com/projects/type-this/" title="Demo" target="_blank">Demo 1</a> | <a href="https://www.mamutlove.com/projects/type-this/index2.html" title="Demo" target="_blank">Demo 2</a> | <a href="https://www.mamutlove.com/projects/type-this/index3.html" title="Demo" target="_blank">Demo 3</a></p>
 
 <h2>Usage</h2>
 <p>• Download or fork the repository.</p>
@@ -54,4 +54,4 @@
 </table>
 
 <h2>Final thoughts</h2>
-<p>Please, take this <a href="http://www.mamutlove.es/projects/type-this/" title="Demo" target="_blank">Demo</a> as it is, and feel free to download, modify, break, use or destroy this code.</p>
+<p>Please, take this <a href="https://www.mamutlove.com/projects/type-this/" title="Demo" target="_blank">Demo</a> as it is, and feel free to download, modify, break, use or destroy this code.</p>
